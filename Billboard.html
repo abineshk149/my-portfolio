@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brochure Design | Abinesh K</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif
+}
+
+body{
+background:#07070a;
+color:#fff;
+overflow-x:hidden
+}
+
+/* glow background */
+body:before{
+content:"";
+position:fixed;
+width:700px;
+height:700px;
+background:radial-gradient(circle,#4f7cff55,transparent 60%);
+left:-200px;
+top:-200px;
+filter:blur(120px);
+z-index:-1
+}
+
+body:after{
+content:"";
+position:fixed;
+width:700px;
+height:700px;
+background:radial-gradient(circle,#ff2fd155,transparent 60%);
+right:-200px;
+bottom:-200px;
+filter:blur(120px);
+z-index:-1
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px
+}
+
+/* header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.03);
+border-bottom:1px solid rgba(255,255,255,0.08);
+position:sticky;
+top:0;
+z-index:10
+}
+
+header a{
+color:#ccc;
+text-decoration:none;
+font-size:14px
+}
+
+.card-info{margin-left:50px}
+
+/* project info */
+
+.project-info{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+margin-top:60px
+}
+
+.project-info h1{
+font-size:40px;
+margin-bottom:15px
+}
+
+.project-info p{
+color:#aaa
+}
+
+/* gallery */
+
+.gallery{
+margin-top:80px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.4s
+}
+
+.gallery img:hover{
+transform:scale(1.03)
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="../index.html">← Back</a>
+<div>Abinesh K</div>
+</header>
+
+<div class="card-info">
+    <h1>Brochure Design</h1>
+</div>
+
+
+<div class="container">
+
+<!-- Project Gallery -->
+
+<div class="gallery">
+
+<img src="photo/travel 2.png">
+<img src="photo/boucher.png">
+<img src="photo/marketing.png">
+<img src="photo/mouse.png">
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
